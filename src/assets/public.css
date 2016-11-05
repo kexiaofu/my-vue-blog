@@ -1,0 +1,579 @@
+@charset "UTF-8";
+
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2016-09-04 11:58:12
+ * @version $Id$
+ */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "微软雅黑";
+    height: 100%;
+}
+
+ul ol {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body{
+    background-color: #eee;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    -webkit-transition: transform .5s ease;
+    -o-transition: transform .5s ease;
+    transition: transform .5s ease;
+}
+
+#navbar {
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    background-color: #06e;
+    position: absolute;
+    top: 0px;
+    z-index: 1000;
+    margin-bottom: 50px;
+    -webkit-transition: width .5s ease;
+    -o-transition: width .5s ease;
+    transition: width .5s ease;
+}
+
+.menu {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    z-index: 999;
+}
+
+.navitem {
+    width: 100px;
+    height: 100px;
+    line-height: 30px;
+    border-radius: 100%;
+    margin: 30px auto;
+    color: #fff;
+    text-align: center;
+    z-index: 100;
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+    position: relative;
+}
+
+.navitem img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.onpage {
+    color: red;
+}
+
+#svga line {
+    stroke: #fff;
+    stroke-width: 2px;
+}
+
+#svga {
+    cursor: pointer;
+    padding: 5px;
+    z-index: 100;
+}
+
+#slidenav {
+    position: absolute;
+    left: -50%;
+    width: 50%;
+    height: 100%;
+    background-color: #06e;
+}
+
+#menulist {
+    width: 100%;
+    position: relative;
+    top: 0px;
+    overflow: hidden;
+    -webkit-transition: transform .5s ease;
+    -o-transition: transform .5s ease;
+    transition: transform .5s ease;
+}
+
+#menulist ul {
+    list-style-type: none;
+}
+
+#menulist ul li {
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    margin-left: -40px;
+}
+
+#mtitle{
+    width:100px;
+    color:#fff;
+    background-color: #05e;
+    margin:0 auto;
+    text-align: center;
+}
+
+.signup {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    border-bottom: 1px solid #03e;
+    margin: 0 auto;
+}
+
+#footer {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    bottom: 0;
+    background-color: #05e;
+    color: #fff;
+    . letter-spacing: 2px;
+}
+
+#banner {
+    width: 100%;
+    height: 150px;
+    background-color: #eee;
+    position: relative;
+}
+
+#banner img {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.mybanner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    letter-spacing: 2px;
+    font-size: 1.2em;
+}
+
+
+/*vue*/
+
+.fcontainer {
+    width: 92%;
+    padding: 0;
+    z-index: 10;
+    position: absolute;
+    left:3.5%;
+    top:45px;
+    background-color: #fff;
+    border:0px solid #eee;
+    overflow: hidden;
+    margin-bottom:20px;
+
+}
+
+.mprecon{
+    text-indent:2em;
+    font-size:0.9em;
+    margin-bottom:10px;
+}
+
+.mcon {
+    width: 100%;
+    height: 100%;
+    margin: 5px auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.mhead {
+    width: 100%;
+    border-bottom: 0px solid #ddd;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.mctopic {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.2em;
+    color: #123;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    margin: 10px auto;
+}
+
+.mhtopic {
+    height: 30px;
+    line-height: 30px;
+    font-size: 1.0em;
+    color: #012;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight:bold;
+    white-space: nowrap;
+    text-align:center;
+}
+
+.mhother {
+    height: 20px;
+    line-height: 20px;
+    font-size: 0.8em;
+}
+
+.mhother .mhclassify, .mhother .mhdate {
+    float: left;
+    color: #999;
+}
+
+.mhother .mhdate {
+    float: right;
+    padding-right: 10px;
+}
+
+
+/*sign*/
+
+.signpage {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    background-color: #06e;
+    letter-spacing: 1px;
+    display: none;
+}
+
+.signText {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    color: #eee;
+    font-size: 1.2em;
+}
+
+#user, #password {
+    width: 60%;
+    height: 30px;
+    line-height: 30px;
+    margin: 20px auto;
+    margin-left: 20%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ddd;
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#userTips, #passwordTips {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 1.0em;
+    margin-top: 20px;
+    text-align: center;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+#ssign {
+    width: 60%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    margin-left: 20%;
+    border: 1px solid #05e;
+    margin-top: 10px;
+    background-color: #04e;
+    border-radius: 50px;
+}
+
+
+/*admin*/
+
+.essayAdmin {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.tooption{
+    width:100%;
+    overflow: hidden;
+    height:30px;
+}
+
+.mtips {
+    width: 30%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    border-bottom: 2px solid #06e;
+    border-radius: 2px;
+    margin-left: 2%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color:#06e;
+}
+
+.mtips:nth-of-type(2){
+    border-color:green;
+    color:green;
+}
+
+.mtips:nth-of-type(4){
+    border-color:red;
+    color:red;
+
+}
+
+.aecontain {
+    overflow: hidden;
+    background-color: #eee;
+}
+
+.aecon {
+    width: 100%;
+    background-color: #eee;
+    margin-top: 2px;
+    background-color: #fff;
+    padding: 5px;
+    box-sizing: border-box;
+    height: 70px;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+        box-sizing: border-box;
+}
+
+.aedate {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 2em;
+    margin-top: 20px;
+}
+
+.aetopic, .aeclassify {
+    width: 90%;
+    color: #06e;
+    padding-left: 5%;
+}
+
+.aeclassify {
+    color: #999;
+}
+
+.aeop {
+    position: absolute;
+    right: 15px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #06e;
+    margin-top: -35px;
+    display: none;
+    -webkit-transition: background-color .5s ease;
+    -o-transition: background-color .5s ease;
+    transition: background-color .5s ease;
+}
+
+.messageTip {
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    width: 150px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    -webkit-transition: opacity .5s ease;
+    -o-transition: opacity .5s ease;
+    transition: opacity .5s ease;
+    z-index: 10000;
+}
+
+
+/*iedit*/
+
+.labelB {
+    display: inline-block;
+    position: relative;
+    margin-left: 23%;
+    width: 20%;
+    overflow: hidden;
+}
+
+.labelB label {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 0px;
+    left: 0%;
+    border: 2px solid #ef4949;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.labelB input:checked + label:after {
+    content: '';
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background: #ef4949;
+    border-radius: 50%;
+}
+
+.editTips {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 0px solid #ddd;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#ppreview{
+    width:96%;
+    height:150px;
+    resize:none;
+    font-size: 1.1em;
+    outline: none;
+
+}
+
+#editlab, #edittopic, #sumpassword {
+    width: 90%;
+    margin-left: 4%;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    font-size: 1.1em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    -webkit-transition: border-color .5s ease;
+    -o-transition: border-color .5s ease;
+    transition: border-color .5s ease;
+    color: #06e;
+    text-align: center;
+    background-color: transparent;
+}
+
+#editlab:focus, #edittopic:focus, #sumpassword:focus {
+    border-bottom-color: #06e;
+}
+
+#sumbitEssay {
+    width: 90%;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #06e;
+    margin: 10px auto;
+    border-radius: 30px;
+    text-align: center;
+}
+
+
+/*passage*/
+
+.apassage {
+    margin: 3px auto;
+    width: 96%;
+    overflow: hidden;
+}
+
+.aphead {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.aptopic {
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    font-size: 1.2em;
+}
+
+.apclassify, .apdate {
+    margin-top: 3px;
+    font-size: 0.8em;
+}
+
+.apcon {
+    width: 100%;
+    margin: 10px auto;
+    text-indent: 2em;
+    line-height: 1.5;
+}
+
+/*分页*/
+.paging{
+    width:100%;
+    height:30px;
+    line-height: 30px;
+    border-top:1px solid red;
+}
+
+/*分页*/
+#pagination{
+    height:25px;
+    line-height: 25px;
+    text-align: center;
+    padding:5px;
+    border-top:1px solid #ccc;
+}
+
+#pagination span{
+    display: inline-block;
+    width:22px;
+    margin-left:2px;
+    background-color:;
+}
